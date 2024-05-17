@@ -1,0 +1,12 @@
+{
+  "name": "cromianski/phpvelhooeste24",
+  "description": "Pacote com as palestras do php velho oeste 2024",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "david",
+      "email": "davidcromianski.dev@gmail.com"
+    }
+  ]
+}
