@@ -1,0 +1,6 @@
+services:
+  phpctl:
+    image: "opencodeco/phpctl:php83-devcontainer"
+    volumes:
+      - .:/app
+    working_dir: /app
