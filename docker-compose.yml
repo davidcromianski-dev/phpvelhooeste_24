@@ -1,7 +1,17 @@
 services:
   php:
-    image: "php:8.3-apache"
+    image: dunglas/frankenphp
     ports:
-      - "8080:80"
+      - "80:80" # HTTP
+      - "443:443" # HTTPS
+      - "443:443/udp" # HTTP/3
     volumes:
-      - .:/var/www/html
+      - ./:/app/public
+      - caddy_data:/data
+      - caddy_config:/config
+    tty: true
+
+# Volumes needed for Caddy certificates and configuration
+volumes:
+  caddy_data:
+  caddy_config:
